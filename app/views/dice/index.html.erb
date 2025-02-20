@@ -1,11 +1,18 @@
 <h1>Let's play!</h1>
 
-<% die1 = rand(1...6)%>
-<% die2 = rand(1...6)%>
+<% 
+  die1 = rand(1...6)
+  die2 = rand(1...6)
+%>
 
 <p>You rolled two dice and got... </p>
-<p>Dice 1: <%= die1 %></p>
-<p>Dice 2: <%= die2 %></p>
+
+<p>Dice 1:</p>
+<img src="/images/dice/<%= die1 %>.svg" alt ="">
+
+<p>Dice 2: </P>
+<img src="/images/dice/<%= die2 %>.svg" alt ="">
+
 <p>Total = <%= die1 + die2 %></p>
 
- <p><a href="https://3000-maryalicepeng-webapps-th4zusoj9wg.ws-us117.gitpod.io/dice">Let's roll again</a></p>  
+ <p><a href="/dice">Let's roll again</a></p>  

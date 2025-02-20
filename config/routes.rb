@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get("/dice", :controller => "dice", :action => "index")
 
+  get("/companies", :controller => "companies", :action => "index")
+
 end
